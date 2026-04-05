@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@import "tailwindcss";
+@theme {
+  --color-sermo-blue: #1da1f2;
+  --color-sermo-black: #14171a;
+  --color-sermo-dark-gray: #657786;
+  --color-sermo-light-gray: #aab8c2;
+  --color-sermo-extra-light-gray: #e1e8ed;
+  --color-sermo-background: #15202b;
+}
+
+body{
+    @apply bg-sermo-background text-white
+}
