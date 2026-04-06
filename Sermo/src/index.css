@@ -1,5 +1,11 @@
 @charset "UTF-8";
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 @theme {
   --color-sermo-blue: #1da1f2;
   --color-sermo-black: #14171a;
