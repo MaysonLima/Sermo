@@ -1,11 +1,40 @@
-import { FaTwitter } from 'react-icons/fa'
+import { FaEllipsisH, FaFeatherAlt, FaTwitter } from 'react-icons/fa'
+import { FaHome } from "react-icons/fa";
+import { FaHashtag } from "react-icons/fa";
+import { FaBell } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+import { FaBookmark } from "react-icons/fa";
+import { FaUserFriends } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 
+
+const NavItem = ({ icon: Icon, text }) => (
+  <div className='flex items-center p-3 rounded-full cursor-pointer hover:bg-gray-600 transition duration-200'>
+    <Icon className='text-2xl mr-4' />
+    <span className='text-xl hidden xl:inline'>{text}</span>
+  </div>
+)
 
 
 export function Sidebar() {
   return (
     <div className='w-20 xl:w-64 sticky top-0 px-2 h-screen'>
       <FaTwitter className='text-blue-400 text-3xl m-4' />
+      <nav>
+        <NavItem icon={FaHome} text='Home'/>
+        <NavItem icon={FaHashtag} text='Explore'/>
+        <NavItem icon={FaBell} text='Notifications'/>
+        <NavItem icon={FaEnvelope} text='Messages'/>
+        <NavItem icon={FaBookmark} text='Bookmarks'/>
+        <NavItem icon={FaUserFriends} text='Comunities'/>
+        <NavItem icon={FaTwitter} text='Premium'/>
+        <NavItem icon={FaUser} text='Profile'/>
+        <NavItem icon={FaEllipsisH} text='More'/>
+      </nav>
+      <button className='w-12 h-12 px-3 py-3 rounded-full bg-blue-400 text-white font-bold text-lg hover:bg-blue-500 transition duration-200 xl:w-full xl:rounded-full'>
+        <FaFeatherAlt className='inline xl:mr-2' />
+        <span className='hidden xl:inline'>Post</span>
+      </button>
     </div>
   )
 }

@@ -5,8 +5,6 @@ import App from './App.jsx'
 import { Sidebar } from './components/sidebar/index.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
     <Sidebar />
-  </StrictMode>,
+  
 )
