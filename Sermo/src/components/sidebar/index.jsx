@@ -1,4 +1,4 @@
-import { FaEllipsisH, FaFeatherAlt, FaTwitter } from 'react-icons/fa'
+import { FaEllipsisH, FaFeatherAlt } from 'react-icons/fa'
 import { FaHome } from "react-icons/fa";
 import { FaHashtag } from "react-icons/fa";
 import { FaBell } from "react-icons/fa";
@@ -6,6 +6,8 @@ import { FaEnvelope } from "react-icons/fa";
 import { FaBookmark } from "react-icons/fa";
 import { FaUserFriends } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
+import { TbLaurelWreathFilled } from "react-icons/tb";
+
 
 
 const NavItem = ({ icon: Icon, text }) => (
@@ -19,7 +21,7 @@ const NavItem = ({ icon: Icon, text }) => (
 export function Sidebar() {
   return (
     <div className='w-20 xl:w-64 sticky top-0 px-2 h-screen'>
-      <FaTwitter className='text-blue-400 text-3xl m-4' />
+      <TbLaurelWreathFilled className='text-blue-400 text-3xl m-4' />
       <nav>
         <NavItem icon={FaHome} text='Home'/>
         <NavItem icon={FaHashtag} text='Explore'/>
@@ -27,7 +29,7 @@ export function Sidebar() {
         <NavItem icon={FaEnvelope} text='Messages'/>
         <NavItem icon={FaBookmark} text='Bookmarks'/>
         <NavItem icon={FaUserFriends} text='Comunities'/>
-        <NavItem icon={FaTwitter} text='Premium'/>
+        <NavItem icon={TbLaurelWreathFilled} text='Premium'/>
         <NavItem icon={FaUser} text='Profile'/>
         <NavItem icon={FaEllipsisH} text='More'/>
       </nav>
