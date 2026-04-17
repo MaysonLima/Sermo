@@ -20,15 +20,15 @@ export function SermoForm(onSermo) {
             />
             <div className="flex justify-between itens-center mt-4 ">
                 <div className='flex space-x-4'>
-                    <FaImages className="text-red-400 cursor-pointer text-lg hover:text-red-500 transition duration-200" />
-                    <FaVideo className="text-red-400 cursor-pointer text-lg hover:text-red-500 transition duration-200" />
-                    <FaChartBar className="text-red-400 cursor-pointer text-lg hover:text-red-500 transition duration-200" />
-                    <FaSmile className="text-red-400 cursor-pointer text-lg hover:text-red-500 transition duration-200" />
-                    <FaCalendarAlt className="text-red-400 cursor-pointer text-lg hover:text-red-500 transition duration-200" />
-                    <FaMapMarkerAlt className="text-red-400 cursor-pointer text-lg hover:text-red-500 transition duration-200" />
-                    <FaFileAlt className="text-red-400 cursor-pointer text-lg hover:text-red-500 transition duration-200" />
+                    <FaImages className="text-red-400 cursor-pointer text-lg hover:text-red-500 transition duration-400" />
+                    <FaVideo className="text-red-400 cursor-pointer text-lg hover:text-red-500 transition duration-400" />
+                    <FaChartBar className="text-red-400 cursor-pointer text-lg hover:text-red-500 transition duration-400" />
+                    <FaSmile className="text-red-400 cursor-pointer text-lg hover:text-red-500 transition duration-400" />
+                    <FaCalendarAlt className="text-red-400 cursor-pointer text-lg hover:text-red-500 transition duration-400" />
+                    <FaMapMarkerAlt className="text-red-400 cursor-pointer text-lg hover:text-red-500 transition duration-400" />
+                    <FaFileAlt className="text-red-400 cursor-pointer text-lg hover:text-red-500 transition duration-400" />
                 </div>
-                    <button className="bg-red-400 text-white font-bold px-4 py-2 rounded-full hover:bg-red-500 transition duration-200" onClick={handleSubmit}>Sermo</button>
+                    <button className="bg-red-400 text-white font-bold px-4 py-2 rounded-full hover:bg-red-500 transition duration-200 cursor-pointer" onClick={handleSubmit}>Sermo</button>
             </div>
         </div>
     )
