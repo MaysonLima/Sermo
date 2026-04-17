@@ -1,16 +1,25 @@
 import { Sidebar } from './components/sidebar/index'
+import { SermoForm } from './components/SermoForm/index'
+import { Sermo } from './components/Sermo/index'
+
 
 function App() {
 
   return (
 
-    <div className='flex mx-auto max-w-7xl'>
+    <div className='flex h-screen bg-sermo-background'>
       <Sidebar />
-      <main className='flex-grow boder-l border-r border-grey-700 max-w-xl'>
-        <header>
-          <h2>For You</h2>
+      <main className='flex-grow border-l border-r border-gray-700 max-w-2xl'>
+        <header className='sticky top-0 z-10 bg-sermo-background bg-opacity-80 backdrop-blur-sm border-b border-gray-700'>
+          <h2 className='px-4 py-3 text-xl font-bold text-white'>For You</h2>
         </header>
+        <SermoForm/>
+        <div>
+          <Sermo />
+        </div>
       </main>
+      <div className='hidden lg:block w-80 border-l border-gray-700'>
+      </div>
     </div>
   )
 }
