@@ -1,4 +1,4 @@
-export default function Sermo(){
+export function Sermo(){
     return(
         <div>
             

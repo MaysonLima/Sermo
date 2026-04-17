@@ -21,7 +21,7 @@ const NavItem = ({ icon: Icon, text }) => (
 export function Sidebar() {
   return (
     <div className='w-20 xl:w-64 sticky top-0 px-2 h-screen'>
-      <TbLaurelWreathFilled className='text-red-400 text-3xl m-4' />
+      <TbLaurelWreathFilled className='text-red-400 text-3xl m-2' />
       <nav>
         <NavItem icon={FaHome} text='Home'/>
         <NavItem icon={FaHashtag} text='Explore'/>
@@ -33,8 +33,8 @@ export function Sidebar() {
         <NavItem icon={TbLaurelWreathFilled} text='Premium'/>
         <NavItem icon={FaEllipsisH} text='More'/>
       </nav>
-      <button className='w-12 h-12 px-3 py-3 rounded-full bg-red-400 text-white font-bold text-lg hover:bg-red-500 transition duration-200 xl:w-full xl:rounded-full'>
-        <FaFeatherAlt className='inline xl:mr-2' />
+      <button className='w-12 h-12 px-3 py-1 rounded-full bg-red-400 text-white font-bold text-lg hover:bg-red-500 transition duration-200 xl:w-full xl:rounded-full'>
+        <FaFeatherAlt className='inline xl:mr-3' />
         <span className='hidden xl:inline'>Post</span>
       </button>
     </div>
