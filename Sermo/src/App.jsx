@@ -9,7 +9,7 @@ function App() {
 
     <div className='flex h-screen bg-sermo-background'>
       <Sidebar />
-      <main className='flex-grow border-l border-r border-gray-700 max-w-2xl'>
+      <main className='grow border-l border-r border-gray-700 max-w-2xl'>
         <header className='sticky top-0 z-10 bg-sermo-background bg-opacity-80 backdrop-blur-sm border-b border-gray-700'>
           <h2 className='px-4 py-3 text-xl font-bold text-white'>For You</h2>
         </header>

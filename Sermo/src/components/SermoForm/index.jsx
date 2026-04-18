@@ -6,7 +6,7 @@ function handleSubmit() {
 
 
 
-export function SermoForm(onSermo) {
+export function SermoForm({onSermo}) {
 
     function handleSubmit() {
 
