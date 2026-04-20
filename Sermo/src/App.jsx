@@ -3,11 +3,12 @@ import { SermoForm } from './components/SermoForm/index'
 import { Sermo } from './components/Sermo/index'
 import { v4 } from "uuid"
 import { getAvatar, getRandomImage } from './utils/generateImages'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 
 function App() {
   const[sermos, setSermos] = useState([])
+
 
   const addNewSermo = (content, includeImage = false) => {
     const newSermo = {
@@ -41,7 +42,9 @@ function App() {
         </header>
         <SermoForm onSermo={ (content) => addNewSermo(content, Math.random() > 0.8)}/>
         <div>
-          <Sermo />
+          {sermos.map(sermo =>(
+          <Sermo key={sermo.id} sermo={sermo}/>
+          ) )}
         </div>
       </main>
       <div className='hidden lg:block w-80 border-l border-gray-700'>

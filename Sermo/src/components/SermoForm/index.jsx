@@ -1,5 +1,5 @@
 import { FaImages, FaSmile, FaCalendarAlt, FaMapMarkerAlt, FaFileAlt, FaChartBar, FaVideo } from "react-icons/fa";
-
+import { useRef} from "react";
 function handleSubmit() {
 
 }
@@ -7,14 +7,21 @@ function handleSubmit() {
 
 
 export function SermoForm({onSermo}) {
+    const textAreaRef = useRef()
+
 
     function handleSubmit() {
+    if(textAreaRef.current.value){
+        onSermo(textAreaRef.current.value)
+        textAreaRef.current.value = ""
+    }
 
 }
 
     return (
         <div className="border-b border-gray-700 p-4">
             <textarea
+                ref={textAreaRef}
                 className="w-full bg-transparent text-white text-xl resize-none outline-none"
                 placeholder="What's happening?"
             />
